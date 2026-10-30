@@ -3,8 +3,8 @@
 
 [h2]需要独立的 MCP 程序[/h2]
 [b]订阅工坊模组后，还需要另行安装本机 MCP 程序。[/b] 工坊模组负责游戏内桥接与采集；独立 MCP 程序负责向 AI 客户端提供工具、读取桥接数据和归档。AI 客户端通过 stdio 启动该程序。
-[url=https://github.com/yuruichang/pz-debug-mcp]GitHub：MCP 程序源码与安装说明[/url]
-[url=https://github.com/yuruichang/pz-debug-mcp/blob/main/README.md]中文安装与连接文档[/url]
+[url=https://github.com/reova/pz-debug-mcp]GitHub：MCP 程序源码与安装说明[/url]
+[url=https://github.com/reova/pz-debug-mcp/blob/main/README.md]中文安装与连接文档[/url]
 当前代码仓库需要访问权限。请先取得源码并完成 MCP 配置，再进行游戏联调。
 
 [h2]功能[/h2]
@@ -32,6 +32,6 @@
 [h2]调试与记录范围[/h2]
 Java 断点需先退出游戏，运行 enable-debugging.ps1，再重启；默认 JDWP 仅监听本机 127.0.0.1:8801。原生源码定位、私有类型和局部变量需要匹配的 PDB。
 游戏侧记录采用有限轮换缓冲；要保留收到的完整历史，请从调试开始保持 MCP 服务连接。未审核方法不执行，未加载区域与缺失符号不能凭空补齐。服务端需在服务器所在机器运行 MCP 程序并访问对应缓存。
-[url=https://github.com/yuruichang/pz-debug-mcp/blob/main/docs/DEBUGGING.md]断点、原生调试与断连恢复说明[/url]
+[url=https://github.com/reova/pz-debug-mcp/blob/main/docs/DEBUGGING.md]断点、原生调试与断连恢复说明[/url]
 
 Mod ID: PZDebugMCP | Version: 0.4.0

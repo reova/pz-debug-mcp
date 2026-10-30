@@ -3,8 +3,8 @@ Connect an MCP-compatible AI client to Project Zomboid to inspect built-in Debug
 
 [h2]A separate MCP program is required[/h2]
 [b]After subscribing to the Workshop mod, you must also install the local MCP program separately.[/b] The mod handles the in-game bridge and data collection. The separate MCP program exposes tools to your AI client, reads bridge data and archives records. Your AI client launches it through stdio.
-[url=https://github.com/yuruichang/pz-debug-mcp]GitHub: MCP program source and installation instructions[/url]
-[url=https://github.com/yuruichang/pz-debug-mcp/blob/main/README.en.md]English installation and connection guide[/url]
+[url=https://github.com/reova/pz-debug-mcp]GitHub: MCP program source and installation instructions[/url]
+[url=https://github.com/reova/pz-debug-mcp/blob/main/README.en.md]English installation and connection guide[/url]
 The repository currently requires access permission. Obtain the source and configure MCP before testing the connection in game.
 
 [h2]Features[/h2]
@@ -32,6 +32,6 @@ The repository currently requires access permission. Obtain the source and confi
 [h2]Debugging and recording limits[/h2]
 For Java breakpoints, exit the game, run enable-debugging.ps1 and restart. JDWP listens only on the loopback address 127.0.0.1:8801 by default. Native source locations, private types and local variables require matching PDB symbols.
 Game-side recording uses a bounded rotating buffer. Keep the MCP service connected from the start of debugging to preserve the full history of received records. Unreviewed methods are not executed; unloaded areas and missing symbols cannot be reconstructed. Servers need the MCP program running on the server machine with access to its cache.
-[url=https://github.com/yuruichang/pz-debug-mcp/blob/main/docs/DEBUGGING.md]Breakpoints, native debugging and disconnect recovery guide[/url]
+[url=https://github.com/reova/pz-debug-mcp/blob/main/docs/DEBUGGING.md]Breakpoints, native debugging and disconnect recovery guide[/url]
 
 Mod ID: PZDebugMCP | Version: 0.4.0

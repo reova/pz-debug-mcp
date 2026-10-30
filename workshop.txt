@@ -5,8 +5,8 @@ description=把支持 MCP 的 AI 客户端连接到 Project Zomboid，在测试�
 description=
 description=[h2]需要独立的 MCP 程序[/h2]
 description=[b]订阅工坊模组后，还需要另行安装本机 MCP 程序。[/b] 工坊模组负责游戏内桥接与采集；独立 MCP 程序负责向 AI 客户端提供工具、读取桥接数据和归档。AI 客户端通过 stdio 启动该程序。
-description=[url=https://github.com/yuruichang/pz-debug-mcp]GitHub：MCP 程序源码与安装说明[/url]
-description=[url=https://github.com/yuruichang/pz-debug-mcp/blob/main/README.md]中文安装与连接文档[/url]
+description=[url=https://github.com/reova/pz-debug-mcp]GitHub：MCP 程序源码与安装说明[/url]
+description=[url=https://github.com/reova/pz-debug-mcp/blob/main/README.md]中文安装与连接文档[/url]
 description=当前代码仓库需要访问权限。请先取得源码并完成 MCP 配置，再进行游戏联调。
 description=
 description=[h2]功能[/h2]
@@ -34,7 +34,7 @@ description=
 description=[h2]调试与记录范围[/h2]
 description=Java 断点需先退出游戏，运行 enable-debugging.ps1，再重启；默认 JDWP 仅监听本机 127.0.0.1:8801。原生源码定位、私有类型和局部变量需要匹配的 PDB。
 description=游戏侧记录采用有限轮换缓冲；要保留收到的完整历史，请从调试开始保持 MCP 服务连接。未审核方法不执行，未加载区域与缺失符号不能凭空补齐。服务端需在服务器所在机器运行 MCP 程序并访问对应缓存。
-description=[url=https://github.com/yuruichang/pz-debug-mcp/blob/main/docs/DEBUGGING.md]断点、原生调试与断连恢复说明[/url]
+description=[url=https://github.com/reova/pz-debug-mcp/blob/main/docs/DEBUGGING.md]断点、原生调试与断连恢复说明[/url]
 description=
 description=Mod ID: PZDebugMCP | Version: 0.4.0
 description=
@@ -45,8 +45,8 @@ description=Connect an MCP-compatible AI client to Project Zomboid to inspect bu
 description=
 description=[h2]A separate MCP program is required[/h2]
 description=[b]After subscribing to the Workshop mod, you must also install the local MCP program separately.[/b] The mod handles the in-game bridge and data collection. The separate MCP program exposes tools to your AI client, reads bridge data and archives records. Your AI client launches it through stdio.
-description=[url=https://github.com/yuruichang/pz-debug-mcp]GitHub: MCP program source and installation instructions[/url]
-description=[url=https://github.com/yuruichang/pz-debug-mcp/blob/main/README.en.md]English installation and connection guide[/url]
+description=[url=https://github.com/reova/pz-debug-mcp]GitHub: MCP program source and installation instructions[/url]
+description=[url=https://github.com/reova/pz-debug-mcp/blob/main/README.en.md]English installation and connection guide[/url]
 description=The repository currently requires access permission. Obtain the source and configure MCP before testing the connection in game.
 description=
 description=[h2]Features[/h2]
@@ -74,7 +74,7 @@ description=
 description=[h2]Debugging and recording limits[/h2]
 description=For Java breakpoints, exit the game, run enable-debugging.ps1 and restart. JDWP listens only on the loopback address 127.0.0.1:8801 by default. Native source locations, private types and local variables require matching PDB symbols.
 description=Game-side recording uses a bounded rotating buffer. Keep the MCP service connected from the start of debugging to preserve the full history of received records. Unreviewed methods are not executed; unloaded areas and missing symbols cannot be reconstructed. Servers need the MCP program running on the server machine with access to its cache.
-description=[url=https://github.com/yuruichang/pz-debug-mcp/blob/main/docs/DEBUGGING.md]Breakpoints, native debugging and disconnect recovery guide[/url]
+description=[url=https://github.com/reova/pz-debug-mcp/blob/main/docs/DEBUGGING.md]Breakpoints, native debugging and disconnect recovery guide[/url]
 description=
 description=Mod ID: PZDebugMCP | Version: 0.4.0
 tags=Build 42;Interface
